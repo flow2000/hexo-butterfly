@@ -1,0 +1,10 @@
+#bbTimeList.bbTimeList.container(onclick=`window.open('/ispeak/','_self')`)
+    bblogo(onclick="location='/ispeak/'",title="说说",style="font-size: 2rem;")
+    #bbtalk.swiper-container
+        #bber-talk.swiper-wrapper
+    i.bber-gotobb.fas.fa-arrow-circle-right(onclick="location='/ispeak/'",title="查看全文")
+.js-pjax
+    script.
+        var bbShortApiUrl = "https://7a68-zhheo-0g8unj30bfbeb210-1302424805.tcb.qcloud.la/json/bber.json?sign=6162122afe14a6b7d3f837bb79b02fd9&t=1612691873"
+    script(src='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js',data-pjax='')
+    script(src='/js/ispeak.js',data-pjax='',defer='')
